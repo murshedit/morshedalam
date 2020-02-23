@@ -1,0 +1,606 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a:hover,
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Work Sans', sans-serif;
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+#header{
+    padding: 20px 0;
+}
+
+#header .navbar-light .navbar-nav .nav-link{
+    font-size: 16px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    transition: all linear .3s;
+}
+#header .navbar-light .navbar-nav .nav-link:hover{
+    color: #f1ed75;
+    text-shadow: 0px 0px 15px rgba(239, 241, 121, 0.56);
+}
+
+#header .navbar-brand img{
+    width: 50px;
+}
+.form-control{
+     background: rgba(0,0,0,0.10);
+     border: 1px solid rgba(0,0,0,0.10);
+}
+.btn-outline-success {
+    color: #fff;
+    border-color: #fff;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 0px;
+}
+
+#banner{
+    background: url(../images/bennar.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+#banner .banner_overlay{
+    padding: 190px 0;
+    background: rgba(0,0,0,0.7);
+    position: relative;
+}
+#banner .content{
+    text-align: center;
+}
+#banner .content h1{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 55px;
+    margin: 20px 0;
+}
+#banner .content p{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 30px 100px;
+}
+#banner .batton a{
+    color: #ffffff;
+    font-weight: 400;
+     border: 1px solid #fff;
+     margin: 10px 10px;
+     border-radius: 17px;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: all linear .3s;
+}
+#banner .batton a:hover{
+  background: #30336b;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, .6);
+}
+/* banner css ends */
+#about{
+   margin-top: 2px;
+    position: relative;
+    padding: 150px 0  0;
+    background: #147e90;
+}
+#about .about_left .img_box{
+    position: relative;
+    width: 68%;
+    height: auto;
+    margin: 120px auto;
+    -webkit-box-shadow: 5px 5px 15px rgba(242, 34, 2, 0.98);
+            box-shadow: 5px 5px 15px rgba(242, 34, 2, 0.98);
+}
+#about .container{
+  transform: skew(0deg, 9deg);
+}
+
+#about .heading{
+  padding-left: 67px;
+  position: relative;
+  z-index: 1;
+}
+#about .heading:before {
+    z-index: -1;
+    position: absolute;
+    content: 'WHO AM I?';
+    color: #c0392b;
+    font-size: 100px;
+    left: 58px;
+    top: -34px;
+    width: 100%;
+    transition: all linear .4s;
+    opacity: .2;
+}
+#about .heading:hover:before{
+  left: 100px;
+}
+#about .heading h2{
+  font-size: 36px;
+  text-transform: uppercase;
+  color: rgba(255,255, 255, .7);
+  font-weight: bold;
+}
+#about .heading .sub_heading h4{
+  font-size: 22px;
+  color: #dff9fb;
+
+}
+#about .about_right{
+  box-sizing: border-box;
+}
+#about .about_right .text{
+  margin-top: 40px;
+}
+#about .about_right .text p{
+  color: #d8bfbf;
+  font-size: 18px;
+  padding-right: 98px;
+  padding-top: 63px;
+}
+#about .about_right .text p span{
+  font-size: 22px;
+  color: #f3d49b;
+}
+#about .about_right .text h6{
+  color: #c7ecee;
+  font-size: 40px;
+  margin: 35px 0 27px
+}
+#about .about_right .text ul li{
+  color: #dff9fb;
+  font-size: 18px;
+  margin: 26px 0;
+}
+
+#about .about_right .common_btn a{
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 17px;
+  font-size: 20px;
+  border: 1px solid #c7ecee;
+  margin-top: 30px;
+  transition: .4s;
+}
+#about .about_right .common_btn a:hover{
+  background: #30336b;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, .6);
+}
+/* about css ends */
+/* service css start */
+#service{
+  background: #30336b;
+  position: relative;
+  padding:150px 0 120px;
+  
+}
+#service .heading{
+  position: relative;
+  z-index: 1;
+  margin-bottom: 120px;
+}
+#service .heading:before{
+  z-index: -1;
+  position: absolute;
+  content: 'WHAT CAN I DO?';
+  color: #ffffff;
+  font-size: 80px;
+  left: -20px;
+  top: -28px;
+  width: 100%;
+  transition: all linear .4s;
+  opacity: .2;
+}
+#service .heading:hover:before{
+  left: 100px;
+}
+#service .heading h2{
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
+.text-center {
+    text-align: center!important;
+    box-shadow: inset -7px 6px 12px #2a2c5d, inset 6px 6px 12px #363a79;
+    padding-top: 14px;
+}.text-center:hover {
+   
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, .6);
+}
+#service .heading .sub_heading h4{
+  font-size: 22px;
+  color: #c7ecee;
+
+}
+#service .neumorphism_box .contant .text h2{
+    /* font-family: 'Raleway', sans-serif; */
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+#service .neumorphism_box .contant .text p{
+    font-size: 12px;
+    color: #1de9f3;
+    text-transform: uppercase;
+    font-weight: 400; 
+}#service .neumorphism_box .contant .text:hover h2{
+    color: #04FC2A;
+}
+
+/* service css ends */
+/* note area start */
+#avilable{
+  background: url(../images/avilable.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#avilable .overlay{
+  background: rgba(0, 0, 0, .5);
+  padding: 100px 0;
+}
+#avilable .heading{
+  margin-bottom: 15px;
+  text-align: center;
+}
+#avilable .heading p{
+  font-size: 40px;
+  color: #fff;
+} 
+#avilable .button {
+  text-align: center;
+  padding-top: 10px;
+}#avilable .button a:hover {
+ background: #30336b;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, .6);
+}
+/* note css end */
+#portfolio{
+  background: #147e90;
+  padding-top:  160px ;
+}
+
+#portfolio .heading{
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+#portfolio .heading:before{
+  z-index: -1;
+  position: absolute;
+  content: 'MY WORKS';
+  color: #c0392b;
+  font-size: 80px;
+  left: -20px;
+  top: -28px;
+  width: 100%;
+  transition: all linear .4s;
+  opacity: .2;
+}
+#portfolio .heading:hover:before{
+  left: 100px;
+}
+#portfolio .heading h2{
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
+#portfolio .heading .sub_heading h4{
+  font-size: 22px;
+  color: #c7ecee;
+}
+#portfolio .text{
+  color: #cac6a5;
+  margin-bottom: 50px;
+}
+#portfolio .img_box{
+  margin: auto;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+    overflow: hidden;
+}
+#portfolio .img_box:hover{
+    box-shadow: 5px 5px 10px #499fd1, 
+            -5px -5px 10px #61d3ff;
+    box-sizing: border-box;
+    padding: 25px;
+}
+#portfolio .img_box .img_box2{
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#portfolio .img_box .img_box2 img{
+  width: 100% !important;
+  height: auto !important;
+}
+#portfolio .img_box .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  top: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#portfolio .img_box .overlay a i{
+  font-size: 24px;
+  color: #fff;
+}
+#portfolio .img_box:hover .overlay{
+  justify-content: center;
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  border-radius:0 0 15%;
+}
+/* portfolio css ends */
+
+#team{
+  padding: 100px 0;
+  background: #30336b;
+}
+#team .heading{
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+#team .heading:before{
+  z-index: -1;
+  position: absolute;
+  content: 'MY TEAM';
+  color: #c0392b;
+  font-size: 80px;
+  left: -20px;
+  top: -28px;
+  width: 100%;
+  transition: all linear .4s;
+  opacity: .2;
+}
+#team .heading:hover:before{
+  left: 100px;
+}
+#team .heading h2{
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
+#team .common_heading h3{
+  margin-left: -33px;
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+#team .team_img{
+  position: relative;
+  overflow: hidden;
+}
+#team .team_area:hover .team_img{
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+#team .team_social_icon{
+  position: absolute;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 35%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.3s;
+
+}
+
+#team .team_area:hover .team_social_icon{
+  right: 0%;
+  opacity: 1;
+  visibility: visible;
+}
+#team .team_social_icon ul li a{
+  height: 38px;
+  width: 38px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  margin-bottom: 15px;
+  display: block;
+  text-align: center;
+  line-height: 38px;
+  transition: all linear 0.3s;
+}
+#team .team_social_icon ul li a:hover{
+  background: #5bc5f4;
+}
+#team .team_cont h3{
+  font-size: 16px;
+  font-weight: 600;
+  color: #d4d2d2;
+  text-transform: uppercase;
+  margin: 10px 0;
+  transition: all linear 0.3s;
+  text-align: center;
+}
+#team .team_cont p{
+  font-size: 13px;
+  color: #c5a8a8;
+  text-align: center;
+}
+#team .team_area:hover .team_cont h3{
+  color: #fff;
+}
+/*team area ends*/
+
+/* contact css start */
+#contact{
+  background: #034387;
+  padding-top: 100px;
+}
+#contact .heading{
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+#contact .heading:before{
+  z-index: -1;
+  position: absolute;
+  content: 'ASK ME';
+  color: #ffffff;
+  font-size: 80px;
+  left: -20px;
+  top: -28px;
+  width: 100%;
+  transition: all linear .4s;
+  opacity: .2;
+}
+#contact .heading:hover:before{
+  left: 100px;
+}
+#contact .heading h2{
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
+#contact .heading .sub_heading h4{
+  font-size: 22px;
+  color: #fff;
+
+}
+#contact .text{
+  color: #6a90a2;
+}
+
+#contact .address_box{
+  margin-top: 10px;
+}
+#contact .address_box .item{
+  margin-bottom: 4px;
+}
+#contact .address_box .item i{
+  display: inline-block;
+  height: 40px;
+  width: 29px;
+  color: #fff;
+  font-size: 25px;
+  margin-right: 5px;
+}
+#contact .address_box .item a{
+  color: #fff;
+}
+#contact .address_box .item:nth-child(2) i{
+  font-size: 29px;
+}
+#contact .address_box .item:nth-child(3) i{
+  font-size: 25px;
+}
+#contact .meassage_area{
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
+#contact .meassage_area .form_box{
+  height: 450px;
+  width: 360px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 10px blue;
+  top: -70px;
+  box-sizing: border-box;
+  background: rgb(167, 175, 100);
+}
+#contact .meassage_area .form_box form{
+  text-align: center;
+}
+#contact .meassage_area .form_box form h2{
+  font-size: 22px;
+  color: rgba(255, 255, 116,.7);
+  margin: 30px 0;
+}
+#contact .meassage_area .form_box form input[type=text],
+#contact .meassage_area .form_box form input[type=email]{
+  background: none;
+  display: block;
+  outline: 0;
+  border: 1px solid black;
+  height: 30px;
+  width: 80%;
+  margin: 20px auto;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: .3s;
+}
+#contact .meassage_area .form_box form textarea{
+  resize: none;
+  width: 80%;
+  height: 170px;
+  transition: .3s;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: none;
+}
+#contact .meassage_area .form_box form textarea:focus,
+#contact .meassage_area .form_box form input[type=text]:focus,
+#contact .meassage_area .form_box form input[type=email]:focus{
+  border: 1px solid rgba(16, 172, 132,1.0);
+  width: 84%;
+}
+/* contact css ends */
+#Copyright{
+  background: #555555;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+}
